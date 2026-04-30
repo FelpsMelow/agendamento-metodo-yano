@@ -50,3 +50,8 @@ ProfessionalScheduleSchema.index(
   { clinicId: 1, professionalId: 1, weekday: 1 },
   { name: 'ix_professional_schedules_clinic_professional_weekday' },
 );
+
+ProfessionalScheduleSchema.index(
+  { clinicId: 1, professionalId: 1, weekday: 1, startTime: 1, endTime: 1 },
+  { unique: true, partialFilterExpression: { deletedAt: null }, name: 'uq_professional_schedule_exact' },
+);
