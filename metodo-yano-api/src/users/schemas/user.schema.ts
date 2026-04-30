@@ -46,6 +46,10 @@ export class User {
 
   @Prop({ type: Types.ObjectId, ref: 'LegacyImport' })
   importBatchId?: Types.ObjectId;
+
+  createdAt?: Date;
+
+  updatedAt?: Date;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

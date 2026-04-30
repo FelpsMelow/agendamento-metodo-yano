@@ -4,6 +4,18 @@ import { Model } from 'mongoose';
 import { User, UserDocument } from '../users/schemas/user.schema';
 import { ProfessionalListItem, ProfessionalListResponse } from './types/professional-list-item.type';
 
+type LeanProfessional = {
+  _id: unknown;
+  clinicId: unknown;
+  name: string;
+  email: string;
+  role: string;
+  isProfessional: boolean;
+  isActive: boolean;
+  createdAt?: Date;
+  updatedAt?: Date;
+};
+
 @Injectable()
 export class ProfessionalsService {
   constructor(@InjectModel(User.name) private readonly userModel: Model<UserDocument>) {}
@@ -13,7 +25,7 @@ export class ProfessionalsService {
       .find({ clinicId, deletedAt: null, isProfessional: true, isActive: true })
       .sort({ name: 1 })
       .select('_id clinicId name email role isProfessional isActive createdAt updatedAt')
-      .lean()
+      .lean<LeanProfessional[]>()
       .exec();
 
     const serializedItems: ProfessionalListItem[] = items.map((professional) => ({

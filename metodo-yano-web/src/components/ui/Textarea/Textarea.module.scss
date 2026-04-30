@@ -1,1 +1,17 @@
-.wrapper { display: grid; gap: 0.375rem; }\n.label { font-size: 0.875rem; color: #61708a; }\n.textarea { min-height: 7rem; padding: 0.625rem 0.75rem; border: 1px solid #d7dce5; border-radius: 8px; resize: vertical; }
+.wrapper {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: #61708a;
+}
+
+.textarea {
+  min-height: 7rem;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #d7dce5;
+  border-radius: 8px;
+  resize: vertical;
+}
