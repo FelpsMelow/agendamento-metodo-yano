@@ -1,1 +1,13 @@
-body { margin: 0; font-family: Arial, sans-serif; }
+@use './reset';
+@use './variables' as *;
+
+body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
