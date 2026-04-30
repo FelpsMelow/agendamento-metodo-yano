@@ -1,0 +1,13 @@
+{
+  "name": "agendamento-metodo-yano",
+  "private": true,
+  "workspaces": [
+    "metodo-yano-api",
+    "metodo-yano-web"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev:api": "npm run start:dev --workspace metodo-yano-api",
+    "dev:web": "npm run dev --workspace metodo-yano-web"
+  }
+}
