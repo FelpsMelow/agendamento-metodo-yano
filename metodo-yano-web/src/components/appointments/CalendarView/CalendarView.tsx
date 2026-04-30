@@ -1,1 +1,4 @@
-export function CalendarView(){ return <div>CalendarView</div>; }
+'use client';
+import FullCalendar from '@fullcalendar/react'; import dayGridPlugin from '@fullcalendar/daygrid'; import timeGridPlugin from '@fullcalendar/timegrid'; import interactionPlugin from '@fullcalendar/interaction'; import ptBr from '@fullcalendar/core/locales/pt-br';
+import styles from './CalendarView.module.scss';
+export function CalendarView({events,onDateClick,onEventClick}:{events:any[];onDateClick:(arg:any)=>void;onEventClick:(arg:any)=>void}){return <div className={styles.wrap}><FullCalendar plugins={[dayGridPlugin,timeGridPlugin,interactionPlugin]} initialView='timeGridWeek' headerToolbar={{left:'prev,next today',center:'title',right:'dayGridMonth,timeGridWeek,timeGridDay'}} buttonText={{today:'Hoje',month:'Mês',week:'Semana',day:'Dia'}} locale={ptBr} selectable events={events} dateClick={onDateClick} eventClick={onEventClick} /></div>}
