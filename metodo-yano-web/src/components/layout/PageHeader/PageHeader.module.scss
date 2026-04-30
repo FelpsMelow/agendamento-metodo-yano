@@ -1,1 +1,23 @@
-.root {}
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.45rem;
+  color: #23364d;
+}
+
+.subtitle {
+  margin: 0.3rem 0 0;
+  color: #607288;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
