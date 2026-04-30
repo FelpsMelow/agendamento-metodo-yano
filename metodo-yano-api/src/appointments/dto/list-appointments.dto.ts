@@ -1,0 +1,2 @@
+import { Type } from 'class-transformer'; import { IsDateString, IsMongoId, IsOptional, IsString, Min } from 'class-validator';
+export class ListAppointmentsDto { @IsOptional() @IsMongoId() professionalId?: string; @IsOptional() @IsDateString() start?: string; @IsOptional() @IsDateString() end?: string; @IsOptional() @IsString() status?: string; @IsOptional() @IsString() q?: string; @IsOptional() @Type(() => Number) @Min(1) page = 1; @IsOptional() @Type(() => Number) @Min(1) limit = 20; }
