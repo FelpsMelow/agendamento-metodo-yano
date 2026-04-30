@@ -1,1 +1,3 @@
-.root {}
+.form{ max-width:850px; margin:0 auto; display:flex; flex-direction:column; gap:12px; }
+.row{ display:grid; grid-template-columns:220px 1fr; gap:8px; align-items:center; }
+.row input,.row select{ padding:8px; border:1px solid #ccc; border-radius:6px; }
