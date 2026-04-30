@@ -14,6 +14,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { MigrationModule } from './migration/migration.module';
 import { AuditModule } from './audit/audit.module';
 import { ProfessionalSchedulesModule } from './professional-schedules/professional-schedules.module';
+import { ProfessionalsModule } from './professionals/professionals.module';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { ProfessionalSchedulesModule } from './professional-schedules/profession
     MigrationModule,
     AuditModule,
     ProfessionalSchedulesModule,
+    ProfessionalsModule,
   ],
 })
 export class AppModule {}
