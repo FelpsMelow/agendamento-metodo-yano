@@ -4,11 +4,7 @@ import { Model } from 'mongoose';
 import { Appointment, AppointmentDocument, AppointmentStatus } from '../appointments/schemas/appointment.schema';
 import { Patient, PatientDocument } from '../patients/schemas/patient.schema';
 import { endOfDay, startOfDay } from '../common/utils/dates';
-
-interface DashboardMetrics {
-  totalPatients: number;
-  todayAppointments: number;
-}
+import { DashboardMetrics } from './types/dashboard-metrics.type';
 
 @Injectable()
 export class DashboardService {
