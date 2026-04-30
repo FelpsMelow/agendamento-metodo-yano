@@ -1,1 +1,10 @@
-.wrapper { display: grid; gap: 0.375rem; }\n.label { font-size: 0.875rem; color: #61708a; }\n.input { padding: 0.625rem 0.75rem; border: 1px solid #d7dce5; border-radius: 8px; }
+.wrapper { display: flex; flex-direction: column; gap: 6px; }
+.label { font-size: 0.9rem; color: #334155; }
+.input {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+}
+.input:focus { border-color: #2563eb; outline: none; }
+.error { font-size: 0.8rem; color: #b91c1c; }
