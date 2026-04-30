@@ -1,1 +1,14 @@
-export function Input(){ return <div>Input</div>; }
+import styles from './Input.module.scss';
+
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  label?: string;
+}
+
+export function Input({ label, ...props }: InputProps) {
+  return (
+    <label className={styles.wrapper}>
+      {label ? <span className={styles.label}>{label}</span> : null}
+      <input className={styles.input} {...props} />
+    </label>
+  );
+}
