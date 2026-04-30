@@ -1,1 +1,4 @@
-.root {}
+.table { width: 100%; border-collapse: collapse; background: #fff; }
+.table th, .table td { text-align: left; padding: 12px; border-bottom: 1px solid #e5e7eb; }
+.table button { border: 0; background: transparent; color: #b42318; cursor: pointer; }
+.empty { padding: 16px; border: 1px dashed #d0d7de; border-radius: 8px; background: #fff; }
