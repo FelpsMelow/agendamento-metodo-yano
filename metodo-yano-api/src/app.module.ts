@@ -13,6 +13,7 @@ import { ReportsModule } from './reports/reports.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { MigrationModule } from './migration/migration.module';
 import { AuditModule } from './audit/audit.module';
+import { ProfessionalSchedulesModule } from './professional-schedules/professional-schedules.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { AuditModule } from './audit/audit.module';
     DashboardModule,
     MigrationModule,
     AuditModule,
+    ProfessionalSchedulesModule,
   ],
 })
 export class AppModule {}
