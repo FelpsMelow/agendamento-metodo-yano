@@ -1,0 +1,7 @@
+.page { display: flex; flex-direction: column; gap: 16px; }
+.header { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.header h1 { margin: 0; }
+.newButton { background: #1f6feb; color: #fff; border-radius: 8px; padding: 10px 14px; text-decoration: none; }
+.search { max-width: 460px; padding: 10px 12px; border: 1px solid #d0d7de; border-radius: 8px; }
+.pagination { display: flex; gap: 12px; align-items: center; }
+.pagination button { border: 1px solid #d0d7de; border-radius: 8px; padding: 8px 12px; background: #fff; }
