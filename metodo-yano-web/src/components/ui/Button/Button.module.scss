@@ -1,1 +1,13 @@
-.button {\n  padding: 0.625rem 1rem;\n  border: none;\n  border-radius: 8px;\n  background: #1f4dbd;\n  color: #fff;\n  font-weight: 600;\n  cursor: pointer;\n}\n\n.button:hover {\n  background: #173b92;\n}
+.button {
+  padding: 0.625rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #1f4dbd;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #173b92;
+}
