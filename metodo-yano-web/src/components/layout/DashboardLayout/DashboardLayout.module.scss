@@ -1,1 +1,22 @@
-.root {}
+.wrapper {
+  min-height: 100vh;
+  background: #f1f4f9;
+}
+
+.contentArea {
+  min-height: 100vh;
+}
+
+.mainContent {
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .contentArea {
+    margin-left: 280px;
+  }
+
+  .mainContent {
+    padding: 1.25rem;
+  }
+}

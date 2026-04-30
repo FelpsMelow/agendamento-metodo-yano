@@ -1,3 +1,5 @@
+import { redirect } from 'next/navigation';
+
 export default function DashboardPage() {
-  return <main>Painel administrativo (estrutura inicial)</main>;
+  redirect('/dashboard/inicio');
 }

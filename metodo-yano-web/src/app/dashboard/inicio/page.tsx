@@ -1,1 +1,5 @@
-export default function InicioPage(){ return <main><h1>Dashboard</h1></main>; }
+import { PageHeader } from '@/components/layout/PageHeader';
+
+export default function InicioPage() {
+  return <PageHeader title="Início" subtitle="Visão geral do sistema." />;
+}
